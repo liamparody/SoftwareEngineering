@@ -16,6 +16,19 @@ int main()
 
     //Display what was typed in
     printf("x = %d\n", x);
+
+    int y = 0;
+
+    printf("Enter a number\n");
+
+    int found2 = scanf_s("%d", &y);
+
+    printf("y = %d\n", y);
+
+    int z = (x + y) / 2;
+
+    printf("%d\n", z);
 }
+
 
 
