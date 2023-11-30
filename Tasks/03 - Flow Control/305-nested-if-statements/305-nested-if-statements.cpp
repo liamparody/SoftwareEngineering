@@ -46,5 +46,13 @@ int main()
     {
         cout << "Tank has sufficient fuel for now." << endl;
         // If it is not full, let the user know they could still top it up.
+        if (level < high)
+        {
+            cout << "you can fill up your tank" << endl;
+        }
+        else
+        {
+            cout << "your tank cant take any more petrol" << endl;
+        }
     }
 }

@@ -29,14 +29,14 @@ int main()
     do {
         cout << "Please enter a level (between 0 and 100)" << endl;
         cin >> level;
-    } while (level < 0);
+    } while (level < 0 || level > high);
 
     if (level <= low)                       // check the level
     {
         cout << "Tank needs filling" << endl;
     }
 
-    if (level > low)                       // monitor the level
+    if (level > low && level < high)                       // monitor the level
     {
         cout << "Tank has sufficient fuel for now" << endl;
     }
@@ -45,5 +45,10 @@ int main()
     {
         cout << "Tank is full" << endl;
     }
+    if (level == 0)
+    {
+        cout << "Tank is empty" << endl;        
+    }
+
 
 }
