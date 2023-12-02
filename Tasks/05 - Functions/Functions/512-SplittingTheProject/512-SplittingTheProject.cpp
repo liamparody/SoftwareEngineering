@@ -1,6 +1,5 @@
 #include "PointLib.h"
 
-
 int main()
 {
     //Create two variables of type Point
