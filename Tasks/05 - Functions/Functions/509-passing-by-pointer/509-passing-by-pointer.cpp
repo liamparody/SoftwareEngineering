@@ -40,11 +40,11 @@ void displayPoint(Point p)
 }
 
 // Calculate and return the distance of p from the origin (0,0)
-float calculateLength(Point p)
+float calculateLength(Point* p)
 {
-    float h = sqrt(p.x * p.x + p.y * p.y);
-    //p.length = h; //This would be pointless as p is a copy
-    return h;
+    float h = sqrt(p->x * p->x + p->y * p->y);
+    p.length = h; //This would be pointless as p is a copy
+    
 }
 
 // Swap the x and y coordinates of p inplace
