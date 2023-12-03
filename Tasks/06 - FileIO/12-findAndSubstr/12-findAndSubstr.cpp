@@ -63,6 +63,28 @@ int main()
         cout << "That broke. Time for coffee" << endl;
         return -1;
     }
+    int areaPos = dataString.find("Area:");
+    if (areaPos == -1)
+    {
+        cout << "Unable to locate the subject area" << endl;
+        return -1;
+    }
+    cout << "Found subject area at position " << areaPos << endl;
+    string areaPrev = dataString.substr(0, areaPos);
+    string areaFollow = dataString.substr(areaPos);
+    istringstream issArea(areaFollow);
+    string areaTag;
+    string areaCode;
+    issArea >> areaTag >> areaCode;
+    if (issArea.fail())
+    {
+        cout << "couldnt read subject area" << endl;
+        return -1;
+    }
+    cout << "found " << areaTag << endl;
+    cout << "followed by " << areaCode << endl;
+    
+
 
     // Done
     cout << "All is well!" << endl;

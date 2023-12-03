@@ -71,6 +71,7 @@ int main()
     else {
         cout << "Oops - could not find it" << endl;
     }
+    regex pattern2("s*\\subject\\s*(Area):\\s*(\\w*)");
 
     // Done
     cout << "All is well!" << endl;

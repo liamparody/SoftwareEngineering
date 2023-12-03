@@ -45,6 +45,28 @@ int main()
     if (iss.eof()) {
         cout << "We reached the end of the file" << endl;
     }
+    int counter = 1;
+    while (!iss.eof())
+    {
+        iss >> nextWord;
+        if (iss.fail())
+        {
+            continue;
+        }
+        counter++;
+        if (nextWord == "Always.")
+        {
+            cout << nextWord << endl << endl;
+        }
+        else 
+        {
+        cout << nextWord << endl;
+        }
+        
+
+
+    }
+    cout << "There are " << counter << " words in that sentence" << endl;
     
     //Done
     return 0;
