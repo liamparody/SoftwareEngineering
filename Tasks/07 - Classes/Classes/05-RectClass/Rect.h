@@ -28,6 +28,12 @@ public:
             updateArea();
         }
     }
+    void setWidth(float w) {
+        if (width != w) {
+            width = w;
+            updateArea();
+        }
+    }
 
     //Getter
     double getArea() {

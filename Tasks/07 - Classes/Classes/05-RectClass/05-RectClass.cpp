@@ -16,5 +16,7 @@ int main()
     r2.display();
     r2.setHeight(10.0f);
     r2.display();
+    r2.setWidth(4.0);
+    r2.display();
 }
 
